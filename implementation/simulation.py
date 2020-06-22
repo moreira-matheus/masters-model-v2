@@ -33,6 +33,7 @@ class Simulation:
             self.government.reset_accounts()
             
             self.government.collect_taxes()
+            self.government.redistribute_revenue(self.param.bias)
             
             if self.param.negative_tax:
                 self.government.pay_nit(self.param.exemption_quantile,

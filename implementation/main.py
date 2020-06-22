@@ -15,6 +15,7 @@ results_folder = '../results/'
 
 param = Param()
 param.size = N
+param.bias = -0.25
 param.negative_tax = False
 param.basic_income = False
 
